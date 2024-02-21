@@ -1,0 +1,6 @@
+<div id="map"></div>
+<div *ngIf="weatherData" id="icono">
+  <p>Temperatura: {{ weatherData.current.temp_c }} °C</p>
+  <img src="{{ weatherData.current.condition.icon }}">
+</div>
+
